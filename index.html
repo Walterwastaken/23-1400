@@ -1,97 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dogs Website</title>
+<title>Dogs Website</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            text-align:center;
-            padding:20px;
-        }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    padding:20px;
+}
 
-        .dog-gallery{
-            display:flex;
-            justify-content:center;
-            gap:20px;
-            flex-wrap:wrap;
-            margin-top:20px;
-        }
+/* clean card layout */
+section{
+    background:white;
+    max-width:950px;
+    margin:25px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.1);
+}
 
-        .dog-gallery img{
-            width:200px;
-            border-radius:10px;
-        }
+/* headings centered only */
+h1,h2,h3,h4{
+    text-align:center;
+}
 
-        table{
-            margin:30px auto;
-            border-collapse:collapse;
-            width:95%;
-            border:3px solid black; /* table border requirement */
-        }
+.dog-gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
-        th,td{
-            border:1px solid black;
-            padding:8px;
-        }
+.dog-gallery img{
+    width:220px;
+    border-radius:12px;
+}
 
-        footer{
-            margin-top:40px;
-            font-size:14px;
-        }
-    </style>
+iframe{
+    display:block;
+    margin:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+}
+
+th,td{
+    border:1px solid #aaa;
+    padding:8px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- 1 HEADINGS -->
+<!-- SECTION 1 -->
+<section>
 <h1>Dogs</h1>
 <h2>Dog Breeds</h2>
 <h3>Dog Care</h3>
 <h4>Dog Prices</h4>
 
-
-<!-- 2 BOLD -->
 <p><b>Dogs are loyal friendly playful protective caring smart animals that love humans deeply and always bring comfort happiness security and companionship to every family home daily.</b></p>
 
-
-<!-- 3 UNDERLINE -->
 <p><u>Every dog needs proper food shelter exercise and regular health checkups daily.</u></p>
 <p><u>Training your dog early helps create good behaviour and strong bonds.</u></p>
 
+<p>Shepherd<sup>1</sup> Labrador<sup>2</sup> Bulldog<sup>3</sup> Poodle<sup>4</sup></p>
+<p>Age 3<sub>yrs</sub> Weight 25<sub>kg</sub> Height 40<sub>cm</sub> Price 100<sub>k</sub></p>
 
-<!-- 4 SUPERSCRIPT -->
-<p>
-Top dogs: Shepherd<sup>1</sup> Labrador<sup>2</sup> Bulldog<sup>3</sup> Poodle<sup>4</sup>
-</p>
+<p><del>KSh 20000</del> <del>KSh 25000</del> <del>KSh 30000</del> <del>KSh 35000</del></p>
 
-
-<!-- 5 SUBSCRIPT -->
-<p>
-Age 3<sub>yrs</sub> Weight 25<sub>kg</sub> Height 40<sub>cm</sub> Price 100<sub>k</sub>
-</p>
+<p><mark>Friendly</mark> <mark>Playful</mark> <mark>Loyal</mark> <mark>Protective</mark></p>
+</section>
 
 
-<!-- 6 DEL -->
-<p>
-Old prices: <del>KSh 20000</del> <del>KSh 25000</del> <del>KSh 30000</del> <del>KSh 35000</del>
-</p>
-
-
-<!-- 7 MARK -->
-<p>
-<mark>Friendly</mark> <mark>Playful</mark> <mark>Loyal</mark> <mark>Protective</mark>
-</p>
-
-
-<!-- 8 SPEECH MARKS -->
-<p>"Dogs are man's best friend."</p>
-<p>"Every puppy deserves love and care."</p>
-<p>"A happy dog makes a happy home."</p>
-<p>"Training builds trust between dogs and owners."</p>
-
-
-<!-- 9 BLOCKQUOTE -->
+<!-- SECTION 2 -->
+<section>
 <blockquote>
 Dogs protect their owners.<br>
 Dogs give emotional support.<br>
@@ -99,17 +94,6 @@ Dogs love unconditionally.<br>
 Dogs make life fun.
 </blockquote>
 
-
-<!-- 11 LINE BREAKS -->
-<p>
-Dogs love running in parks everyday with friends happily.<br>
-They enjoy playing fetch balls and chasing sticks outdoors.<br>
-Owners must provide clean water and healthy balanced meals.<br>
-Regular grooming keeps their fur shiny smooth and comfortable.
-</p>
-
-
-<!-- 12 HR -->
 <hr>
 <p>Dogs need exercise daily.</p>
 <hr>
@@ -117,32 +101,28 @@ Regular grooming keeps their fur shiny smooth and comfortable.
 <hr>
 <p>Love makes them happier.</p>
 
-
-<!-- 13 PRE -->
 <pre>
 Dogs guard homes at night.
 Dogs bark to alert owners.
 Dogs sleep peacefully after playing.
 </pre>
+</section>
 
 
-<!-- 14 UNORDERED LIST -->
+<!-- SECTION 3 LISTS -->
+<section>
 <ul>
 <li>Food</li>
 <li>Toys</li>
 <li>Water</li>
 </ul>
 
-
-<!-- 15 ORDERED LIST -->
 <ol>
 <li>Feed dog</li>
 <li>Walk dog</li>
 <li>Groom dog</li>
 </ol>
 
-
-<!-- 16 NESTED LIST -->
 <ul>
 <li>Big Dogs
     <ul>
@@ -157,29 +137,33 @@ Dogs sleep peacefully after playing.
     </ul>
 </li>
 </ul>
+</section>
 
 
-<!-- IMAGES (UNCHANGED) -->
+<!-- SECTION 4 IMAGES (UNCHANGED) -->
+<section>
+<h2>Dog Gallery 🐶</h2>
 <div class="dog-gallery">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbZJwh4AWbLTgcawech5mLrnCY7q0r2vGHw&s">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzTiKwF9skI52GjQz-McK6fRYzUrc4B8qaWpLvIb8xw&s">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gtmmq9BT6Lb1WUDFaBOlEfxmryekcrvyQIWqzhxH3ZkQRvZqG05C49E&s=10">
 </div>
+</section>
 
 
-<!-- YOUTUBE (UNCHANGED) -->
-<iframe 
-width="560" 
-height="315"
+<!-- SECTION 5 YOUTUBE (UNCHANGED) -->
+<section>
+<h2>Watch Dogs Playing</h2>
+<iframe width="560" height="315"
 src="https://www.youtube.com/embed/1oDGa2yPb2g"
-frameborder="0"
-allowfullscreen>
-</iframe>
+allowfullscreen></iframe>
+</section>
 
 
-<!-- 17–20 BIG TABLE -->
-<table>
-<caption>Complete Dog Information Table</caption>
+<!-- SECTION 6 BIG TABLE -->
+<section>
+<table border="2">
+<caption><b>Complete Dog Information Table</b></caption>
 
 <tr>
 <th>Breed</th><th>Country</th><th>Price</th><th>Size</th>
@@ -190,46 +174,24 @@ allowfullscreen>
 <td rowspan="2">German Shepherd</td>
 <td>Germany</td><td>103k</td><td>Large</td><td>Brown</td><td>12yrs</td><td>High</td><td>High</td>
 </tr>
-
 <tr>
 <td>Europe</td><td>105k</td><td>Large</td><td>Black</td><td>13yrs</td><td>High</td><td>High</td>
 </tr>
 
-<tr>
-<td>Labrador</td><td>Canada</td><td>90k</td><td>Medium</td><td>Gold</td><td>14yrs</td><td>Medium</td><td>Medium</td>
-</tr>
-
-<tr>
-<td>Bulldog</td><td>England</td><td>150k</td><td>Medium</td><td>White</td><td>10yrs</td><td>Low</td><td>Medium</td>
-</tr>
-
-<tr>
-<td>Poodle</td><td>France</td><td>110k</td><td>Small</td><td>Black</td><td>15yrs</td><td>Low</td><td>Low</td>
-</tr>
-
-<tr>
-<td>Shiba Inu</td><td>Japan</td><td>140k</td><td>Small</td><td>Red</td><td>13yrs</td><td>Low</td><td>Low</td>
-</tr>
-
-<tr>
-<td>Pug</td><td>China</td><td>80k</td><td>Small</td><td>Fawn</td><td>12yrs</td><td>Low</td><td>Medium</td>
-</tr>
-
-<tr>
-<td>Husky</td><td>Russia</td><td>120k</td><td>Large</td><td>Grey</td><td>14yrs</td><td>High</td><td>High</td>
-</tr>
-
-<tr>
-<td>Beagle</td><td>USA</td><td>85k</td><td>Medium</td><td>Tri</td><td>13yrs</td><td>Medium</td><td>Medium</td>
-</tr>
-
+<tr><td>Labrador</td><td>Canada</td><td>90k</td><td>Medium</td><td>Gold</td><td>14yrs</td><td>Medium</td><td>Medium</td></tr>
+<tr><td>Bulldog</td><td>England</td><td>150k</td><td>Medium</td><td>White</td><td>10yrs</td><td>Low</td><td>Medium</td></tr>
+<tr><td>Poodle</td><td>France</td><td>110k</td><td>Small</td><td>Black</td><td>15yrs</td><td>Low</td><td>Low</td></tr>
+<tr><td>Shiba Inu</td><td>Japan</td><td>140k</td><td>Small</td><td>Red</td><td>13yrs</td><td>Low</td><td>Low</td></tr>
+<tr><td>Pug</td><td>China</td><td>80k</td><td>Small</td><td>Fawn</td><td>12yrs</td><td>Low</td><td>Medium</td></tr>
+<tr><td>Husky</td><td>Russia</td><td>120k</td><td>Large</td><td>Grey</td><td>14yrs</td><td>High</td><td>High</td></tr>
+<tr><td>Beagle</td><td>USA</td><td>85k</td><td>Medium</td><td>Tri</td><td>13yrs</td><td>Medium</td><td>Medium</td></tr>
 </table>
+</section>
 
 
-<!-- 10 FOOTER -->
 <footer>
-© 2026 Dog Lovers Kenya 🐶
+© 2026 Dog Lovers Kenya 🐕
 </footer>
 
 </body>
-</html>    
+</html>
