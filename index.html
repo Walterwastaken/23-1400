@@ -4,165 +4,232 @@
     <title>Dogs Website</title>
 
     <style>
-        body {
+        body{
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            text-align:center;
+            padding:20px;
         }
 
-        .dog-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-            flex-wrap: wrap;
+        .dog-gallery{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            margin-top:20px;
         }
 
-        .dog-gallery img {
-            width: 200px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        .dog-gallery img{
+            width:200px;
+            border-radius:10px;
         }
 
-        .description {
-            max-width: 700px;
-            margin: 30px auto;
-            line-height: 1.6;
+        table{
+            margin:30px auto;
+            border-collapse:collapse;
+            width:95%;
+            border:3px solid black; /* table border requirement */
         }
 
-        .video-section {
-            margin-top: 40px;
+        th,td{
+            border:1px solid black;
+            padding:8px;
         }
 
-        table {
-            margin: 40px auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 12px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #f9f9f9;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 14px;
+        footer{
+            margin-top:40px;
+            font-size:14px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Headings -->
-    <h1>Dogs</h1>
-    <h2>This website is about dogs</h2>
-    <h3>Different Breeds and Styles</h3>
-    <h4>Prices and Locations</h4>
+<!-- 1 HEADINGS -->
+<h1>Dogs</h1>
+<h2>Dog Breeds</h2>
+<h3>Dog Care</h3>
+<h4>Dog Prices</h4>
 
-    <!-- Bold sentence -->
-    <p><b>Dogs are loyal, playful, protective, loving companions that bring happiness and comfort to families all around the world every single day.</b></p>
 
-    <!-- Underlined sentences -->
-    <p><u>Every dog breed has a unique personality, size, and beautiful coat colour.</u></p>
-    <p><u>Taking care of dogs properly helps them live longer healthy lives.</u></p>
+<!-- 2 BOLD -->
+<p><b>Dogs are loyal friendly playful protective caring smart animals that love humans deeply and always bring comfort happiness security and companionship to every family home daily.</b></p>
 
-    <!-- Description -->
-    <div class="description">
-        <p>
-            Dogs come in many beautiful colours and styles. Some have fluffy white fur,
-            others have brown, black, or mixed colours. Some dogs are small and cute,
-            while others are big and strong. Their different shapes and personalities
-            make them special and fun to be around.
-        </p>
-    </div>
 
-    <!-- Superscript (DOG themed, not chemistry) -->
-    <p>
-        Top breeds: German Shepherd<sup>1</sup>, Labrador<sup>2</sup>, Bulldog<sup>3</sup>, Poodle<sup>4</sup>
-    </p>
+<!-- 3 UNDERLINE -->
+<p><u>Every dog needs proper food shelter exercise and regular health checkups daily.</u></p>
+<p><u>Training your dog early helps create good behaviour and strong bonds.</u></p>
 
-    <!-- Subscript (DOG themed) -->
-    <p>
-        Age: 3<sub>yrs</sub> | Weight: 25<sub>kg</sub> | Height: 40<sub>cm</sub> | Price: 103<sub>k</sub>
-    </p>
 
-    <!-- Dog Images (UNCHANGED ✅) -->
-    <div class="dog-gallery">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbZJwh4AWbLTgcawech5mLrnCY7q0r2vGHw&s" alt="Dog 1">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzTiKwF9skI52GjQz-McK6fRYzUrc4B8qaWpLvIb8xw&s" alt="Dog 2">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gtmmq9BT6Lb1WUDFaBOlEfxmryekcrvyQIWqzhxH3ZkQRvZqG05C49E&s=10" alt="Dog 3">
-    </div>
+<!-- 4 SUPERSCRIPT -->
+<p>
+Top dogs: Shepherd<sup>1</sup> Labrador<sup>2</sup> Bulldog<sup>3</sup> Poodle<sup>4</sup>
+</p>
 
-    <!-- YouTube Video (UNCHANGED ✅) -->
-    <div class="video-section">
-        <h2>Watch Dogs Playing 🐶</h2>
 
-        <iframe 
-            width="560" 
-            height="315"
-            src="https://www.youtube.com/embed/1oDGa2yPb2g"
-            title="Dog video"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </div>
+<!-- 5 SUBSCRIPT -->
+<p>
+Age 3<sub>yrs</sub> Weight 25<sub>kg</sub> Height 40<sub>cm</sub> Price 100<sub>k</sub>
+</p>
 
-    <!-- Dog Breed Table -->
-    <h2>Dog Breed Information</h2>
 
-    <table>
-        <caption>Dog Breed Prices and Locations (KES)</caption>
+<!-- 6 DEL -->
+<p>
+Old prices: <del>KSh 20000</del> <del>KSh 25000</del> <del>KSh 30000</del> <del>KSh 35000</del>
+</p>
 
-        <tr>
-            <th>Breed</th>
-            <th>Location</th>
-            <th>Price (KES)</th>
-        </tr>
 
-        <tr>
-            <td>German Shepherd</td>
-            <td>Germany</td>
-            <td>~KSh 103,200</td>
-        </tr>
+<!-- 7 MARK -->
+<p>
+<mark>Friendly</mark> <mark>Playful</mark> <mark>Loyal</mark> <mark>Protective</mark>
+</p>
 
-        <tr>
-            <td>Labrador Retriever</td>
-            <td>Canada</td>
-            <td>~KSh 90,300</td>
-        </tr>
 
-        <tr>
-            <td>Bulldog</td>
-            <td>England</td>
-            <td>~KSh 154,800</td>
-        </tr>
+<!-- 8 SPEECH MARKS -->
+<p>"Dogs are man's best friend."</p>
+<p>"Every puppy deserves love and care."</p>
+<p>"A happy dog makes a happy home."</p>
+<p>"Training builds trust between dogs and owners."</p>
 
-        <tr>
-            <td>Poodle</td>
-            <td>France</td>
-            <td>~KSh 116,100</td>
-        </tr>
 
-        <tr>
-            <td>Shiba Inu</td>
-            <td>Japan</td>
-            <td>~KSh 141,900</td>
-        </tr>
-    </table>
+<!-- 9 BLOCKQUOTE -->
+<blockquote>
+Dogs protect their owners.<br>
+Dogs give emotional support.<br>
+Dogs love unconditionally.<br>
+Dogs make life fun.
+</blockquote>
 
-    <!-- Footer -->
-    <footer>
-        © 2026 Dogs Website | Made with ❤️ for dog lovers
-    </footer>
+
+<!-- 11 LINE BREAKS -->
+<p>
+Dogs love running in parks everyday with friends happily.<br>
+They enjoy playing fetch balls and chasing sticks outdoors.<br>
+Owners must provide clean water and healthy balanced meals.<br>
+Regular grooming keeps their fur shiny smooth and comfortable.
+</p>
+
+
+<!-- 12 HR -->
+<hr>
+<p>Dogs need exercise daily.</p>
+<hr>
+<p>Healthy food keeps them strong.</p>
+<hr>
+<p>Love makes them happier.</p>
+
+
+<!-- 13 PRE -->
+<pre>
+Dogs guard homes at night.
+Dogs bark to alert owners.
+Dogs sleep peacefully after playing.
+</pre>
+
+
+<!-- 14 UNORDERED LIST -->
+<ul>
+<li>Food</li>
+<li>Toys</li>
+<li>Water</li>
+</ul>
+
+
+<!-- 15 ORDERED LIST -->
+<ol>
+<li>Feed dog</li>
+<li>Walk dog</li>
+<li>Groom dog</li>
+</ol>
+
+
+<!-- 16 NESTED LIST -->
+<ul>
+<li>Big Dogs
+    <ul>
+        <li>German Shepherd</li>
+        <li>Rottweiler</li>
+    </ul>
+</li>
+<li>Small Dogs
+    <ul>
+        <li>Pug</li>
+        <li>Chihuahua</li>
+    </ul>
+</li>
+</ul>
+
+
+<!-- IMAGES (UNCHANGED) -->
+<div class="dog-gallery">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbZJwh4AWbLTgcawech5mLrnCY7q0r2vGHw&s">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzTiKwF9skI52GjQz-McK6fRYzUrc4B8qaWpLvIb8xw&s">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gtmmq9BT6Lb1WUDFaBOlEfxmryekcrvyQIWqzhxH3ZkQRvZqG05C49E&s=10">
+</div>
+
+
+<!-- YOUTUBE (UNCHANGED) -->
+<iframe 
+width="560" 
+height="315"
+src="https://www.youtube.com/embed/1oDGa2yPb2g"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+
+<!-- 17–20 BIG TABLE -->
+<table>
+<caption>Complete Dog Information Table</caption>
+
+<tr>
+<th>Breed</th><th>Country</th><th>Price</th><th>Size</th>
+<th>Color</th><th>Life</th><th>Food</th><th>Care</th>
+</tr>
+
+<tr>
+<td rowspan="2">German Shepherd</td>
+<td>Germany</td><td>103k</td><td>Large</td><td>Brown</td><td>12yrs</td><td>High</td><td>High</td>
+</tr>
+
+<tr>
+<td>Europe</td><td>105k</td><td>Large</td><td>Black</td><td>13yrs</td><td>High</td><td>High</td>
+</tr>
+
+<tr>
+<td>Labrador</td><td>Canada</td><td>90k</td><td>Medium</td><td>Gold</td><td>14yrs</td><td>Medium</td><td>Medium</td>
+</tr>
+
+<tr>
+<td>Bulldog</td><td>England</td><td>150k</td><td>Medium</td><td>White</td><td>10yrs</td><td>Low</td><td>Medium</td>
+</tr>
+
+<tr>
+<td>Poodle</td><td>France</td><td>110k</td><td>Small</td><td>Black</td><td>15yrs</td><td>Low</td><td>Low</td>
+</tr>
+
+<tr>
+<td>Shiba Inu</td><td>Japan</td><td>140k</td><td>Small</td><td>Red</td><td>13yrs</td><td>Low</td><td>Low</td>
+</tr>
+
+<tr>
+<td>Pug</td><td>China</td><td>80k</td><td>Small</td><td>Fawn</td><td>12yrs</td><td>Low</td><td>Medium</td>
+</tr>
+
+<tr>
+<td>Husky</td><td>Russia</td><td>120k</td><td>Large</td><td>Grey</td><td>14yrs</td><td>High</td><td>High</td>
+</tr>
+
+<tr>
+<td>Beagle</td><td>USA</td><td>85k</td><td>Medium</td><td>Tri</td><td>13yrs</td><td>Medium</td><td>Medium</td>
+</tr>
+
+</table>
+
+
+<!-- 10 FOOTER -->
+<footer>
+© 2026 Dog Lovers Kenya 🐶
+</footer>
 
 </body>
-</html>
+</html>    
