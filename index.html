@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HTML Demonstration Page</title>
+    <title>Dogs Website</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
             padding: 20px;
         }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-            text-align: center;
+
+        .dog-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
+
+        .dog-gallery img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .description {
+            max-width: 700px;
+            margin: 30px auto;
+            line-height: 1.6;
+        }
+
+        .video-section {
+            margin-top: 40px;
+        }
+
         table {
-            margin-bottom: 40px;
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
 
-    <!-- 1. Headings -->
+    <!-- Headings -->
     <h1>Dogs Website</h1>
-    <h2>Learn about Different Dog Breeds</h2>
-    <h3>Dog Colors, Sizes, and Styles</h3>
-    <h4>Pricing and Locations Around the World</h4>
+    <h2>All About Dog Breeds</h2>
+    <h3>Colors, Sizes, Styles</h3>
+    <h4>Prices and Locations</h4>
 
-    <!-- 2. Bold sentence -->
-    <p><b>This page demonstrates all major HTML tags and elements for learning purposes today, including tables, lists, formatting, and multimedia usage effectively.</b></p>
+    <!-- Paragraphs with bold and underline -->
+    <p><b>Dogs are loyal, playful, intelligent, and fun companions for humans everywhere in the world.</b></p>
+    <p><u>They come in various sizes, colors, and temperaments that make them unique and special.</u></p>
+    <p><u>Proper care, training, and attention ensure dogs remain healthy and happy throughout life.</u></p>
 
-    <!-- 3. Underlined sentences -->
-    <p><u>Dogs are amazing creatures with unique traits and personalities in every breed.</u></p>
-    <p><u>They can be playful, loyal, intelligent, and protective companions for humans worldwide.</u></p>
+    <!-- Superscript & Subscript -->
+    <p>Water formula: H<sup>2</sup>O, Einstein's E=mc<sup>2</sup></p>
+    <p>Chemical compounds: CO<sub>2</sub>, H<sub>2</sub>O</p>
 
-    <!-- 4. Superscript -->
-    <p>Water formula: H<sup>2</sup>O, Einstein's E=mc<sup>2</sup>, Area²=length²+width², 10<sup>3</sup> is thousand</p>
-
-    <!-- 5. Subscript -->
-    <p>Chemical compounds: CO<sub>2</sub>, H<sub>2</sub>O, NaCl<sub>3</sub>, Sulfur H<sub>2</sub>S</p>
-
-    <!-- 6. Del tag -->
+    <!-- Del & Mark tags -->
     <p>Old price: <del>KSh 100,000</del>, New price: KSh 103,200</p>
-    <p>Removed breed: <del>Chow Chow</del></p>
-    <p>Deleted info: <del>Labrador Retriever 2022</del></p>
-    <p>Outdated link: <del>www.olddogsite.com</del></p>
+    <p>Highlighted breed: <mark>German Shepherd</mark></p>
 
-    <!-- 7. Mark tag -->
-    <p>Highlight: <mark>German Shepherd</mark> is very loyal</p>
-    <p>Mark: <mark>Labrador</mark> is playful and friendly</p>
-    <p>Mark: <mark>Bulldog</mark> has wrinkled face</p>
-    <p>Mark: <mark>Poodle</mark> is intelligent and elegant</p>
-
-    <!-- 8. Speech marks -->
-    <p>"I love my dog," she said with excitement.</p>
-    <p>"Dogs make life joyful," everyone agreed loudly.</p>
-    <p>"Remember to feed your dog twice daily," instructed the vet.</p>
-    <p>"Playtime keeps them healthy," noted the trainer enthusiastically.</p>
-
-    <!-- 9. Blockquote -->
+    <!-- Blockquote -->
     <blockquote>
         Dogs teach us loyalty and friendship.<br>
         They are true companions for life.<br>
@@ -65,176 +89,66 @@
         They bring happiness to every home.
     </blockquote>
 
-    <!-- 10. Footer -->
-    <footer>
-        &copy; 2026 Dogs Website. All Rights Reserved.
-    </footer>
+    <!-- Dog Images -->
+    <div class="dog-gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbZJwh4AWbLTgcawech5mLrnCY7q0r2vGHw&s" alt="Dog 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzTiKwF9skI52GjQz-McK6fRYzUrc4B8qaWpLvIb8xw&s" alt="Dog 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gtmmq9BT6Lb1WUDFaBOlEfxmryekcrvyQIWqzhxH3ZkQRvZqG05C49E&s=10" alt="Dog 3">
+    </div>
 
-    <!-- 11. Line breaks -->
-    <p>
-        Dogs are loyal animals that love humans.<br>
-        They come in various sizes and colors.<br>
-        Training is important for good behavior.<br>
-        Proper food ensures their healthy growth.
-    </p>
+    <!-- YouTube Video -->
+    <div class="video-section">
+        <h2>Watch Dogs Playing 🐶</h2>
+        <iframe 
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/1oDGa2yPb2g"
+            title="Dog video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-    <!-- 12. hr tag -->
-    <p>Dogs require proper care.<hr></p>
-    <p>Exercise is essential for their health.<hr></p>
-    <p>Regular checkups keep them strong.<hr></p>
+    <!-- Dog Breed Table -->
+    <h2>Dog Breed Information</h2>
 
-    <!-- 13. pre tag -->
-    <pre>
-    HTML stands for Hyper Text Markup Language.
-    It is used to create web pages.
-    Learning HTML is fun and interactive.
-    </pre>
-
-    <!-- 14. Unordered list -->
-    <ul>
-        <li>German Shepherd</li>
-        <li>Labrador</li>
-        <li>Bulldog</li>
-    </ul>
-
-    <!-- 15. Ordered list -->
-    <ol>
-        <li>Feed your dog daily</li>
-        <li>Take your dog for walks</li>
-        <li>Provide proper shelter</li>
-    </ol>
-
-    <!-- 16. Nested list -->
-    <ul>
-        <li>Dog Breeds
-            <ul>
-                <li>German Shepherd</li>
-                <li>Labrador</li>
-                <li>Bulldog</li>
-            </ul>
-        </li>
-        <li>Dog Colors
-            <ul>
-                <li>White</li>
-                <li>Black</li>
-                <li>Brown</li>
-            </ul>
-        </li>
-    </ul>
-
-    <!-- 17. Table 10x8 -->
     <table>
-        <caption>Dog Breed Prices and Locations</caption>
         <tr>
             <th>Breed</th>
             <th>Location</th>
             <th>Price (KES)</th>
-            <th>Size</th>
-            <th>Color</th>
-            <th>Lifespan</th>
-            <th>Temperament</th>
-            <th>Notes</th>
         </tr>
         <tr>
-            <td rowspan="2">German Shepherd</td>
+            <td>German Shepherd</td>
             <td>Germany</td>
-            <td>103,200</td>
-            <td>Large</td>
-            <td>Black/Tan</td>
-            <td>9-13 yrs</td>
-            <td>Loyal</td>
-            <td>Excellent guard dog</td>
+            <td>~KSh 103,200</td>
         </tr>
         <tr>
-            <td>Kenya</td>
-            <td>95,000</td>
-            <td>Large</td>
-            <td>Brown</td>
-            <td>9-13 yrs</td>
-            <td>Loyal</td>
-            <td>Popular pet</td>
-        </tr>
-        <tr>
-            <td>Labrador</td>
+            <td>Labrador Retriever</td>
             <td>Canada</td>
-            <td>90,300</td>
-            <td>Medium</td>
-            <td>Yellow</td>
-            <td>10-12 yrs</td>
-            <td>Friendly</td>
-            <td>Great with kids</td>
+            <td>~KSh 90,300</td>
         </tr>
         <tr>
             <td>Bulldog</td>
             <td>England</td>
-            <td>154,800</td>
-            <td>Medium</td>
-            <td>White/Brown</td>
-            <td>8-10 yrs</td>
-            <td>Calm</td>
-            <td>Indoor dog</td>
+            <td>~KSh 154,800</td>
         </tr>
         <tr>
             <td>Poodle</td>
             <td>France</td>
-            <td>116,100</td>
-            <td>Small/Medium</td>
-            <td>White</td>
-            <td>12-15 yrs</td>
-            <td>Intelligent</td>
-            <td>Great show dog</td>
+            <td>~KSh 116,100</td>
         </tr>
         <tr>
             <td>Shiba Inu</td>
             <td>Japan</td>
-            <td>141,900</td>
-            <td>Small</td>
-            <td>Red</td>
-            <td>12-16 yrs</td>
-            <td>Independent</td>
-            <td>Alert and agile</td>
-        </tr>
-        <tr>
-            <td>Beagle</td>
-            <td>UK</td>
-            <td>75,000</td>
-            <td>Small</td>
-            <td>Tricolor</td>
-            <td>12-15 yrs</td>
-            <td>Friendly</td>
-            <td>Great scent hound</td>
-        </tr>
-        <tr>
-            <td>Boxer</td>
-            <td>Germany</td>
-            <td>120,000</td>
-            <td>Medium</td>
-            <td>Fawn</td>
-            <td>10-12 yrs</td>
-            <td>Playful</td>
-            <td>Good family dog</td>
-        </tr>
-        <tr>
-            <td>Dalmatian</td>
-            <td>Croatia</td>
-            <td>130,000</td>
-            <td>Medium</td>
-            <td>White/Black Spots</td>
-            <td>11-13 yrs</td>
-            <td>Active</td>
-            <td>Famous for firehouse dogs</td>
-        </tr>
-        <tr>
-            <td>Chihuahua</td>
-            <td>Mexico</td>
-            <td>60,000</td>
-            <td>Small</td>
-            <td>Various</td>
-            <td>12-20 yrs</td>
-            <td>Lively</td>
-            <td>Portable lap dog</td>
+            <td>~KSh 141,900</td>
         </tr>
     </table>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Dogs Website. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
