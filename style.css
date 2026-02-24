@@ -8,3 +8,10 @@
     max-width: 800px;         /* prevents it from stretching full width */
     width: 90%;               /* responsive width for smaller screens */
 }
+body {
+    background-color: #f4f8fb; /* light background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
