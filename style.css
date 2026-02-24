@@ -1,67 +1,48 @@
-/* === Page-wide styles === */
+/* External CSS: main layout */
 body {
-    background-color: #263238; /* dark blue-grey background */
+    background-color: #2b3e50; /* dark blue background */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #eceff1; /* light text for readability */
+    color: #f2f2f2; /* light text color */
 }
 
-/* === Main container to center content === */
 .main-container {
     width: 90%;
     max-width: 1100px;
-    margin: auto; /* horizontal center */
+    margin: auto;
     padding: 20px;
 }
 
-/* === Card container styling (for 5+ sections) === */
 .card {
-    background: #37474f; /* dark card background */
+    background: #3b4f65; /* darker card background */
     padding: 20px;
-    margin: 20px auto;  /* vertical spacing + horizontal center */
+    margin: 20px auto;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     text-align: center;
     max-width: 800px;
     width: 90%;
-    color: #eceff1; /* ensures text on dark card is readable */
 }
 
-/* === Headings styling === */
-h1, h2, h3, h4, h5 {
-    color: #ffcc80; /* warm orange for headings */
-    margin-bottom: 15px;
-}
-
-/* === Paragraph styling === */
-p {
-    line-height: 1.6;
-}
-
-/* === Ordered list centering === */
-ol {
-    text-align: left;
-    display: inline-block;
-    padding-left: 20px;
-}
-
-/* === Unordered list styling === */
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-/* === Table styling === */
 table {
     width: 100%;
-    margin: 20px auto;
+    margin: auto;
     border-collapse: collapse;
     text-align: center;
-    color: #eceff1;
+}
+
+table, th, td {
+    border: 2px solid #f2f2f2;
 }
 
 th, td {
+    padding: 10px;
+}
+
+img {
+    border-radius: 12px;
+}th, td {
     padding: 10px;
     border: 1px solid #90a4ae; /* lighter border for dark bg */
 }
