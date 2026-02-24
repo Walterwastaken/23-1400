@@ -13,3 +13,10 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
+/* Page-wide styles */
+body {
+    background-color: #f4f8fb; /* light background color */
+    font-family: Arial, sans-serif; /* default font for all text */
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+}
