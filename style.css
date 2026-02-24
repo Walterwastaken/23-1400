@@ -8,3 +8,8 @@
     max-width: 800px;         /* prevents it from stretching full width */
     width: 90%;               /* responsive width for smaller screens */
 }
+.card ol, .card ul {
+    list-style-position: inside;  /* makes numbers/bullets inside the card */
+    text-align: center;           /* centers text and numbers */
+    padding-left: 0;              /* removes default left indent */
+}
