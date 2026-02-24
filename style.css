@@ -1,10 +1,9 @@
-/* External CSS: main layout */
+/* External CSS Example */
 body {
-    background-color: #2b3e50; /* dark blue background */
+    background-color: #a0b8c0; /* darker background */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #f2f2f2; /* light text color */
 }
 
 .main-container {
@@ -15,45 +14,21 @@ body {
 }
 
 .card {
-    background: #3b4f65; /* darker card background */
+    background: white;
     padding: 20px;
     margin: 20px auto;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
     max-width: 800px;
     width: 90%;
 }
 
-table {
-    width: 100%;
-    margin: auto;
-    border-collapse: collapse;
-    text-align: center;
+sup, sub {
+    vertical-align: super;
+    font-size: 0.8em;
 }
 
-table, th, td {
-    border: 2px solid #f2f2f2;
-}
-
-th, td {
-    padding: 10px;
-}
-
-img {
-    border-radius: 12px;
-}th, td {
-    padding: 10px;
-    border: 1px solid #90a4ae; /* lighter border for dark bg */
-}
-
-caption {
-    caption-side: top;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* === Image gallery styling === */
 .dog-gallery {
     display: flex;
     justify-content: center;
@@ -67,17 +42,9 @@ caption {
     border-radius: 12px;
 }
 
-/* === Video section styling === */
-.video-section {
-    text-align: center;
-    margin: 30px 0;
-}
-
-/* === Footer styling === */
 footer {
     text-align: center;
     margin-top: 30px;
     padding: 15px;
-    background: #455a64; /* darker footer */
-    border-top: 2px solid #ffcc80;
+    background: #f2f2f2;
 }
