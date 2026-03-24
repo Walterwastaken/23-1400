@@ -1,1 +1,589 @@
-<h1>My Project Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man’s Best Friend | Premium Dog Kennels</title>
+    
+    <!-- Google Fonts for better aesthetics -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Internal CSS (all styles included here) -->
+    <style>
+        /* ========== GLOBAL RESET & VARIABLES ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0f212e 0%, #1a2f3f 100%);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: #f0f3f8;
+            line-height: 1.5;
+        }
+
+        /* Main container styling */
+        .main-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px 25px 40px;
+        }
+
+        /* ========== MENU BAR (at least 5 items) ========== */
+        .navbar {
+            background: rgba(15, 33, 46, 0.92);
+            backdrop-filter: blur(12px);
+            border-radius: 60px;
+            padding: 12px 28px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 32px;
+            box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 221, 87, 0.25);
+        }
+
+        .navbar a {
+            color: #FFE5A3;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.05rem;
+            padding: 8px 8px;
+            transition: 0.2s;
+            letter-spacing: 0.3px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .navbar a i {
+            font-size: 1.1rem;
+            color: #ffdd57;
+        }
+
+        .navbar a:hover {
+            color: white;
+            transform: translateY(-2px);
+            text-shadow: 0 2px 6px #ffdd57aa;
+        }
+
+        .navbar a.active {
+            color: #ffdd57;
+            border-bottom: 2px solid #ffdd57;
+            padding-bottom: 6px;
+        }
+
+        /* ========== CARD & CONTAINER STYLING (container styling) ========== */
+        .card {
+            background: rgba(30, 48, 64, 0.85);
+            backdrop-filter: blur(2px);
+            border-radius: 32px;
+            padding: 28px 32px;
+            margin-bottom: 35px;
+            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 221, 87, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+            border-color: rgba(255, 221, 87, 0.4);
+        }
+
+        /* ========== HEADINGS ========== */
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFE6A3, #ffc857);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            color: #ffdd57;
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff6f61;
+            padding-left: 18px;
+        }
+
+        h3 {
+            color: #ff8a75;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        h4, h5 {
+            color: #4fc3ff;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        /* ========== PARAGRAPHS ========== */
+        p {
+            margin-bottom: 14px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        /* ========== NESTED LISTS (minimum 5 items, nested) ========== */
+        .nested-list-section {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 24px;
+            padding: 18px 24px;
+            margin-top: 15px;
+        }
+
+        ul, ol {
+            margin-left: 28px;
+            margin-bottom: 10px;
+        }
+
+        ul ul {
+            list-style-type: circle;
+            margin-left: 28px;
+        }
+
+        .list-highlight li {
+            margin: 8px 0;
+        }
+
+        /* ========== TABLES (full length tables - at least 2) ========== */
+        .dog-table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1e2e3c;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        }
+
+        th {
+            background: #ffdd57;
+            color: #1b2a3d;
+            font-weight: 700;
+            padding: 14px 8px;
+            font-size: 0.95rem;
+        }
+
+        td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #3a4c5e;
+            color: #f0f3f8;
+        }
+
+        tr:hover td {
+            background: #2e4255;
+        }
+
+        caption {
+            caption-side: top;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ffdd57;
+            margin-bottom: 12px;
+        }
+
+        /* ========== IMAGES & GALLERY (minimum 5 images) ========== */
+        .gallery-flex {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .gallery-img {
+            width: 220px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 28px;
+            box-shadow: 0 15px 25px -8px black;
+            transition: 0.25s;
+            border: 2px solid #ffdd57aa;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+            border-color: #ffdd57;
+        }
+
+        /* ========== VIDEOS (minimum 5 videos) ========== */
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 35px;
+            margin: 35px 0;
+        }
+
+        .video-card {
+            background: #1f3543;
+            border-radius: 28px;
+            padding: 15px;
+            text-align: center;
+            width: 500px;
+            max-width: 100%;
+            transition: all 0.2s;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 280px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        /* ========== FOOTER ========== */
+        .main-footer {
+            background: #0a1720;
+            border-radius: 40px;
+            padding: 28px 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            border-top: 2px solid #ffdd5733;
+        }
+
+        .main-footer p {
+            margin: 6px 0;
+        }
+
+        /* ========== TEXT STYLING ========== */
+        mark {
+            background: #ffdd57;
+            color: #1b2a3d;
+            padding: 2px 6px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        del {
+            color: #ff8a75;
+        }
+
+        hr {
+            margin: 20px 0;
+            border-color: #ffdd5740;
+        }
+
+        /* ========== ADDED FEATURES ========== */
+        .added-features {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 680px) {
+            .card {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .navbar a {
+                font-size: 0.85rem;
+                gap: 4px;
+            }
+            .video-card iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <!-- MENU BAR: 5 items (Home, Breeds, Care, Gallery, Contact) = 5 pages minimum -->
+    <div class="navbar">
+        <a href="#" class="active" data-page="home"><i class="fas fa-paw"></i> Home</a>
+        <a href="#" data-page="breeds"><i class="fas fa-dog"></i> Dog Breeds</a>
+        <a href="#" data-page="care"><i class="fas fa-heartbeat"></i> Care Tips</a>
+        <a href="#" data-page="gallery"><i class="fas fa-images"></i> Gallery & Videos</a>
+        <a href="#" data-page="contact"><i class="fas fa-envelope"></i> Contact & Adoption</a>
+    </div>
+
+    <!-- ========== PAGE 1: HOME ========== -->
+    <div id="home-page" class="page-content">
+        <!-- Card 1 hero -->
+        <div class="card">
+            <h1>🐕 MAN'S BEST FRIEND</h1>
+            <p><strong>Dogs are incredible companions that provide unconditional love, improve our physical health, offer emotional support, and remain loyal friends.</strong> Whether you need a playful buddy or a devoted guardian, our kennels connect you with ethically raised pups.</p>
+            <p><u>Over 10+ years of trusted breeding & adoption in Kenya — healthy, vaccinated puppies ready for forever homes.</u></p>
+        </div>
+
+        <!-- Two columns layout (requirement: at least 2 columns) -->
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 35px;">
+            <div class="card" style="flex: 1; min-width: 250px;">
+                <h4><i class="fas fa-shield-alt"></i> Why Choose Us?</h4>
+                <p>✔️ Health guarantee & vet certified<br>✔️ Lifetime support & training guidance<br>✔️ Ethical breeding practices</p>
+                <p>We prioritize animal welfare and match each family with the perfect breed.</p>
+            </div>
+            <div class="card" style="flex: 1; min-width: 250px;">
+                <h4><i class="fas fa-clock"></i> Upcoming Events</h4>
+                <p>🐕‍🦺 Puppy Playdate – April 12th<br>🏆 Agility Workshop – April 20th<br>🎉 Adoption Drive – May 1st</p>
+                <p><mark>Free vet check for first 20 adopters!</mark></p>
+            </div>
+        </div>
+
+        <!-- nested list (minimum 5 items, nested) -->
+        <div class="card">
+            <h3><i class="fas fa-list-ul"></i> Essential Dog Care Checklist (Nested)</h3>
+            <div class="nested-list-section">
+                <ul class="list-highlight">
+                    <li><strong>Daily Routine</strong>
+                        <ul>
+                            <li>Morning walk (20-30 min)</li>
+                            <li>Balanced meal portion</li>
+                            <li>Fresh water always available</li>
+                        </ul>
+                    </li>
+                    <li><strong>Weekly Tasks</strong>
+                        <ul>
+                            <li>Grooming & brushing coat</li>
+                            <li>Check nails & ears cleaning</li>
+                            <li>Tooth brushing (dental sticks)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Monthly / Vet Care</strong>
+                        <ul>
+                            <li>Deworming & flea prevention</li>
+                            <li>Vaccination schedule review</li>
+                        </ul>
+                    </li>
+                    <li><strong>Training Goals</strong>
+                        <ul>
+                            <li>Basic commands (sit, stay, come)</li>
+                            <li>Socialization with other dogs</li>
+                        </ul>
+                    </li>
+                    <li><strong>Nutritional Needs</strong>
+                        <ul>
+                            <li>High-protein kibble</li>
+                            <li>Avoid toxic foods (chocolate, grapes)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><i>Following these steps ensures a happy, healthy best friend 🌟</i></p>
+            </div>
+        </div>
+
+        <!-- Formatted paragraphs (at least 5 paragraphs across site) -->
+        <div class="card">
+            <h2>Why Dogs Improve Our Lives</h2>
+            <p>Scientific studies show that owning a dog reduces stress, lowers blood pressure, and encourages physical activity. Daily walks with your dog can add years to your life.</p>
+            <p>Dogs also serve as emotional anchors — they sense sadness and offer comfort without judgment. Their loyalty is unmatched, forming deep bonds with every family member.</p>
+            <p>Beyond companionship, dogs provide security. Breeds like German Shepherds and Rottweilers are natural guardians, while Labradors and Golden Retrievers are perfect for families with children.</p>
+            <p>Rescuing a dog from a shelter gives a second chance to a loving soul. Every year, thousands of dogs in Kenya need homes. Adopting saves lives and brings immense joy.</p>
+            <p>Investing time in training yields a well-behaved dog that can accompany you anywhere — from outdoor cafes to road trips. The bond deepens with each shared adventure.</p>
+        </div>
+    </div>
+
+    <!-- ========== PAGE 2: BREEDS (with 2 full length tables) ========== -->
+    <div id="breeds-page" class="page-content" style="display: none;">
+        <div class="card">
+            <h2>🐕 Popular Dog Breeds in Kenya</h2>
+            <p>Explore our premium selection. All dogs come with first vaccination, microchip, and health booklet. Prices updated March 2026.</p>
+            <!-- Full length table 1 -->
+            <div class="dog-table-wrapper">
+                <table>
+                    <caption>⭐ Premium Breeds Available ⭐</caption>
+                    <thead>
+                        <tr><th>Breed</th><th>Origin</th><th>Age (months)</th><th>Temperament</th><th>Training level</th><th>Price (KES)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>German Shepherd</td><td>Germany</td><td>3-5</td><td>Loyal, Courageous</td><td>Advanced Guard</td><td><del>120,000</del> <mark>103,200</mark></td></tr>
+                        <tr><td>Labrador Retriever</td><td>UK</td><td>4</td><td>Friendly, Intelligent</td><td>Obedience</td><td><del>150,000</del> <mark>90,300</mark></td></tr>
+                        <tr><td>Bulldog</td><td>England</td><td>5</td><td>Calm, Docile</td><td>Basic</td><td><del>300,000</del> <mark>154,800</mark></td></tr>
+                        <tr><td>Poodle</td><td>France</td><td>3</td><td>Playful, Hypoallergenic</td><td>Agility</td><td><del>280,000</del> <mark>116,100</mark></td></tr>
+                        <tr><td>Siberian Husky</td><td>Russia</td><td>5</td><td>Energetic, Friendly</td><td>Advanced</td><td><del>95,000</del> <mark>79,500</mark></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- second full table -->
+            <div class="dog-table-wrapper" style="margin-top: 35px;">
+                <table>
+                    <caption>🐾 Adoption Ready - Small & Medium Breeds</caption>
+                    <thead><tr><th>Breed</th><th>Gender</th><th>Age</th><th>Vaccinated</th><th>Special Notes</th><th>Adoption Fee</th></tr></thead>
+                    <tbody>
+                        <tr><td>French Bulldog</td><td>Male</td><td>8 weeks</td><td>✅ Yes</td><td>Great apartment dog</td><td><del>85,000</del> <mark>72,000</mark></td></tr>
+                        <tr><td>Chihuahua</td><td>Female</td><td>10 weeks</td><td>✅ Yes</td><td>Loyal & tiny</td><td><del>45,000</del> <mark>38,000</mark></td></tr>
+                        <tr><td>Pomeranian</td><td>Female</td><td>12 weeks</td><td>✅ Yes</td><td>Fluffy companion</td><td><del>55,000</del> <mark>48,000</mark></td></tr>
+                        <tr><td>Beagle</td><td>Male</td><td>14 weeks</td><td>✅ Yes</td><td>Curious & loving</td><td><del>60,000</del> <mark>52,000</mark></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><sup>*Prices inclusive of vet check & first vaccine.</sup> Limited slots — reserve today!</p>
+        </div>
+        <div class="card">
+            <h4>Breed Selection Tips</h4>
+            <p>Consider your lifestyle: active breeds (Husky, GSD) need lots of exercise; smaller breeds (Poodle, Frenchie) adapt well to apartments. All dogs require love and patience.</p>
+        </div>
+    </div>
+
+    <!-- ========== PAGE 3: CARE TIPS ========== -->
+    <div id="care-page" class="page-content" style="display: none;">
+        <div class="card">
+            <h3>🐾 Holistic Dog Care Guide</h3>
+            <p><strong>Nutrition:</strong> High-quality protein sources, avoid fillers. Puppies need 3-4 meals daily; adults 2 meals. Always provide clean water.</p>
+            <p><strong>Exercise:</strong> Minimum 45 mins walk/play. Mental stimulation prevents destructive behavior — use puzzle toys.</p>
+            <p><strong>Grooming:</strong> Brush coat 2-3 times weekly, bathe monthly with dog-specific shampoo. Nail trimming every 3 weeks.</p>
+            <p><strong>Vet Visits:</strong> Annual checkups, core vaccines (rabies, distemper), monthly flea/tick prevention. Spaying/neutering recommended.</p>
+            <p><strong>Training & Socialization:</strong> Positive reinforcement works best. Enroll in puppy classes for social skills.</p>
+            <hr>
+            <p><u>Remember: A tired dog is a happy dog — routine equals confidence.</u> Regular bonding strengthens the human-animal connection.</p>
+        </div>
+        <div class="card">
+            <h4>Warning Signs: When to See a Vet</h4>
+            <ul>
+                <li>Lethargy or loss of appetite >24h</li>
+                <li>Vomiting / diarrhea repeatedly</li>
+                <li>Excessive scratching or hair loss</li>
+                <li>Difficulty urinating</li>
+            </ul>
+            <p>Early detection saves lives! Schedule regular wellness exams.</p>
+        </div>
+    </div>
+
+    <!-- ========== PAGE 4: GALLERY & VIDEOS (5 images + 5 videos minimum) ========== -->
+    <div id="gallery-page" class="page-content" style="display: none;">
+        <div class="card">
+            <h2>📸 Dog Moments Gallery</h2>
+            <div class="gallery-flex">
+                <!-- Minimum 5 images -->
+                <img class="gallery-img" src="https://images.unsplash.com/photo-1568572933382-74d440642117?w=400&h=300&fit=crop" alt="German Shepherd">
+                <img class="gallery-img" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop" alt="Labrador playing">
+                <img class="gallery-img" src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=300&fit=crop" alt="Bulldog">
+                <img class="gallery-img" src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=400&h=300&fit=crop" alt="Poodle curly">
+                <img class="gallery-img" src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&h=300&fit=crop" alt="Husky winter">
+            </div>
+            <p>📷 Every photo represents a happy dog adopted through our kennels. Ready to create memories?</p>
+        </div>
+
+        <div class="card">
+            <h2>🎥 Best Dog Videos (5 Video Embeds)</h2>
+            <div class="video-grid">
+                <div class="video-card"><iframe src="https://www.youtube.com/embed/1oDGa2yPb2g" title="Dog compilation 1" allowfullscreen></iframe><p>🐕 Puppy Playtime</p></div>
+                <div class="video-card"><iframe src="https://www.youtube.com/embed/mbcpEcGv_WQ" title="Dogs having fun" allowfullscreen></iframe><p>⚽ Smart Dogs Tricks</p></div>
+                <div class="video-card"><iframe src="https://www.youtube.com/embed/3tDmEfZ0oYg" title="Golden Retriever puppy" allowfullscreen></iframe><p>🦮 Golden Happiness</p></div>
+                <div class="video-card"><iframe src="https://www.youtube.com/embed/nGeKSiCQkPw" title="German Shepherd training" allowfullscreen></iframe><p>🏆 Advanced Obedience</p></div>
+                <div class="video-card"><iframe src="https://www.youtube.com/embed/5XGQpI2fScM" title="Rescue dog story" allowfullscreen></iframe><p>❤️ Adoption Success</p></div>
+            </div>
+            <p><i>5+ heartwarming videos to inspire your journey with dogs. Watch, learn and fall in love.</i></p>
+        </div>
+    </div>
+
+    <!-- ========== PAGE 5: CONTACT & ADOPTION ========== -->
+    <div id="contact-page" class="page-content" style="display: none;">
+        <div class="card">
+            <h2>🏡 Adopt or Inquire</h2>
+            <p>Fill the form below and our team will reach out within 24h. We help you find your perfect furry companion.</p>
+            <form id="adoptionForm" style="display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+                <input type="text" placeholder="Your Full Name" id="name" required style="padding: 12px; border-radius: 40px; border: none; background: #2c4458; color: white;">
+                <input type="email" placeholder="Email Address" id="email" required style="padding: 12px; border-radius: 40px; border: none; background: #2c4458; color: white;">
+                <select id="breedInterest" style="padding: 12px; border-radius: 40px; background: #2c4458; color: white;">
+                    <option>German Shepherd</option><option>Labrador</option><option>Bulldog</option><option>Poodle</option><option>Husky</option>
+                </select>
+                <textarea rows="3" placeholder="Tell us about your home & experience with dogs" style="border-radius: 24px; padding: 12px; background: #2c4458; color: white;"></textarea>
+                <button type="button" id="submitAdoption" style="background:#ff6f61; font-weight:bold; padding:12px; border-radius:40px; cursor:pointer;">🐾 Send Adoption Request</button>
+            </form>
+            <p id="formFeedback" style="margin-top: 16px; color: #ffdd57;"></p>
+        </div>
+        <div class="card added-features" style="justify-content: space-between; flex-wrap: wrap;">
+            <div><i class="fas fa-clock"></i> <span id="liveClock">--:--:--</span> (EAT)</div>
+            <div><i class="fas fa-trophy"></i> Featured: Puppy starter kit worth 8,000 KES free!</div>
+            <div><i class="fas fa-phone-alt"></i> Hotline: +254 700 123 456</div>
+        </div>
+        <div class="card">
+            <h5>📍 Visit Our Kennels</h5>
+            <p>Nairobi – Karen Road, Opposite Animal Care. Open Mon-Sat 9am-5pm. Appointments recommended.</p>
+            <p>We also offer home delivery and virtual meet-and-greets.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER (present on every page, requirement) -->
+    <footer class="main-footer">
+        <p>🐕 © 2026 Man's Best Friend Kennels Kenya | Healthy Dogs • Trusted Breeders • Lifetime Support 🐾</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Mombasa, Kisumu | Follow us: <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i></p>
+        <p>📍 All dogs are ethically raised, vet-checked and microchipped — your best friend awaits!</p>
+    </footer>
+</div>
+
+<script>
+    // Simple multi-page navigation (5 pages minimum satisfied)
+    const pages = ['home', 'breeds', 'care', 'gallery', 'contact'];
+    function showPage(pageId) {
+        pages.forEach(p => {
+            const el = document.getElementById(`${p}-page`);
+            if (el) el.style.display = 'none';
+        });
+        const activePage = document.getElementById(`${pageId}-page`);
+        if (activePage) activePage.style.display = 'block';
+
+        // update navbar active class
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.classList.remove('active');
+            const dataPage = link.getAttribute('data-page');
+            if (dataPage === pageId) link.classList.add('active');
+        });
+    }
+
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const page = link.getAttribute('data-page');
+            if (page) showPage(page);
+        });
+    });
+
+    // default home
+    showPage('home');
+
+    // added feature: live clock for contact page
+    function updateClock() {
+        const clockElem = document.getElementById('liveClock');
+        if (clockElem) {
+            const now = new Date();
+            clockElem.innerText = now.toLocaleTimeString('en-KE', { hour12: false });
+        }
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // added interactive adoption form feedback
+    const submitBtn = document.getElementById('submitAdoption');
+    if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            if (nameInput && emailInput && nameInput.value.trim() !== '' && emailInput.value.includes('@')) {
+                document.getElementById('formFeedback').innerHTML = '✅ Thank you ' + nameInput.value + '! Our team will contact you within 24h about adoption.';
+                document.getElementById('adoptionForm')?.reset();
+            } else {
+                document.getElementById('formFeedback').innerHTML = '⚠️ Please enter valid name and email address.';
+            }
+        });
+    }
+</script>
+</body>
+</html>
