@@ -7,7 +7,7 @@ body {
     color: #f2f2f2;
 }
 
-/* Main card styling */
+/* Card styling */
 .card {
     background-color: #2e3b50;
     padding: 20px;
@@ -19,38 +19,57 @@ body {
     text-align: center;
 }
 
-/* Paragraphs */
+/* External CSS classes for assignment */
+.paragraph3{
+    color: purple;
+    text-decoration: underline;
+}
+.highlight3{
+    color: pink;
+}
+.building3{
+    color: lightgreen;
+}
+
+/* Paragraph styling */
 p {
     line-height: 1.6;
 }
 
-/* Superscript & Subscript */
+/* Superscript/subscript */
 sup, sub {
     vertical-align: middle;
     font-size: 0.8em;
 }
 
-/* Highlighted prices */
-del { color: #ff6b6b; }
-mark { background-color: #ffdd57; color:#000; font-weight:bold; }
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
 
-/* External CSS for assignment */
-.paragraph3{
-    color:purple;
-    text-decoration:underline;
+table, th, td {
+    border: 1px solid #f2f2f2;
+    padding: 10px;
 }
-.highlight3{
-    color:pink;
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffdd57;
+    margin-bottom: 10px;
 }
-.building3{
-    color:lightgreen;
-}
+
+del { color: #ff6b6b; }
+mark { background-color: #ffdd57; color: #000; font-weight: bold; }
 
 /* Dog gallery images */
-.dog-gallery img { width:220px; border-radius:12px; }
+.dog-gallery img { width: 220px; border-radius: 12px; }
 
-/* Video section */
-.video-section iframe { border-radius:12px; }
+/* Videos */
+.video-section iframe { border-radius: 12px; }
 
 /* Footer */
 footer { text-align:center; margin-top:30px; padding:15px; background:#1b2a3d; color:#f2f2f2; }
