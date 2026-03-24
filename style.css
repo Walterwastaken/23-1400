@@ -1,15 +1,15 @@
 /* General body styling */
 body {
-    background-color: #1b2a3d; /* dark blue background */
+    background-color: #1b2a3d;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #f2f2f2; /* default text color */
+    color: #f2f2f2;
 }
 
 /* Main card styling */
 .card {
-    background-color: #2e3b50; /* slightly lighter dark card */
+    background-color: #2e3b50;
     padding: 20px;
     margin: 20px auto;
     border-radius: 12px;
@@ -19,107 +19,38 @@ body {
     text-align: center;
 }
 
-/* Headings */
-h1 {
-    color: #ffdd57; /* golden */
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #ffdd57;
-    text-decoration: underline;
-}
-
-h3 {
-    color: #ff6f61; /* reddish */
-    font-style: italic;
-}
-
-h4, h5 {
-    color: #00bfff; /* light blue */
-}
-
 /* Paragraphs */
 p {
     line-height: 1.6;
 }
 
-/* Superscript and subscript */
+/* Superscript & Subscript */
 sup, sub {
     vertical-align: middle;
     font-size: 0.8em;
 }
 
-/* Remove default bullets but keep nesting visually */
-ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-}
+/* Highlighted prices */
+del { color: #ff6b6b; }
+mark { background-color: #ffdd57; color:#000; font-weight:bold; }
 
-ul ul {
-    margin-left: 20px;
+/* External CSS for assignment */
+.paragraph3{
+    color:purple;
+    text-decoration:underline;
 }
-
-/* Ordered lists (adoption steps) */
-ol {
-    text-align: center;
-    padding-left: 0;
-    display: inline-block;
+.highlight3{
+    color:pink;
 }
-
-/* Highlighted old and new prices */
-del {
-    color: #ff6b6b; /* red */
-}
-
-mark {
-    background-color: #ffdd57;
-    color: #000;
-    font-weight: bold;
-}
-
-/* Table styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px auto;
-    text-align: center;
-}
-
-table, th, td {
-    border: 1px solid #f2f2f2;
-    padding: 10px;
-}
-
-caption {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffdd57;
-    margin-bottom: 10px;
-}
-
-/* Table text alignment for sub/sup */
-td sup, td sub {
-    vertical-align: middle;
+.building3{
+    color:lightgreen;
 }
 
 /* Dog gallery images */
-.dog-gallery img {
-    width: 220px;
-    border-radius: 12px;
-}
+.dog-gallery img { width:220px; border-radius:12px; }
 
 /* Video section */
-.video-section iframe {
-    border-radius: 12px;
-}
+.video-section iframe { border-radius:12px; }
 
 /* Footer */
-footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 15px;
-    background: #1b2a3d;
-    color: #f2f2f2;
-}
+footer { text-align:center; margin-top:30px; padding:15px; background:#1b2a3d; color:#f2f2f2; }
